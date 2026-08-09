@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project", //在特定的通訊埠（Port 5011）監聽網路上傳來的 HTTP 請求，並把請求交給你的 C# 程式處理，最後將結果回傳給瀏覽器。.NET 的內建跨平台高效能 Web 伺服器是 Kestrel
+      "dotnetRunMessages": true, //在命令列執行專案時，終端機會顯示詳細的啟動訊息（當前 .NET 版本、伺服器監聽的網址等），方便追蹤狀況。
+      "launchBrowser": true, //啟動專案時，會自動開啟瀏覽器並導向指定的網址。
+      "applicationUrl": "http://localhost:5011",
+      "environmentVariables": {
+        //設定 ASP.NET Core 環境變數為 Development，在開發階段，如果程式出錯，網頁會顯示詳細的錯誤堆疊訊息（Error Stack Trace）方便除錯；如果在正式環境，系統則會隱藏這些敏感資訊。
+        //程式啟動，發現當前環境是 Development。ASP.NET Core會自動加載 appsettings.Development.json，
+        // 並用裡面的設定（例如更詳細的 Log 層級、本機資料庫連線字串）來覆蓋 appsettings.json 的預設值。
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7099;http://localhost:5011",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

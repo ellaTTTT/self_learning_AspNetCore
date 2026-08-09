@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\bulkybookweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\bulkybookweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66C56A9E-7832-4C86-8203-1CBAD6B69A27}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Data\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "BulkyBookWeb\\Data\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T15:30:15.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BulkyBookWeb",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\BulkyBookWeb.csproj",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+              "RelativeToolTip": "BulkyBookWeb\\BulkyBookWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-09T15:26:45.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\appsettings.Development.json",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\appsettings.Development.json",
+              "RelativeToolTip": "BulkyBookWeb\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-09T15:11:27.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Models\\Category.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Models\\Category.cs",
+              "RelativeToolTip": "BulkyBookWeb\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:42:48.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-09T14:41:34.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BulkyBookWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-09T10:34:13.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BulkyBookWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T09:45:19.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Program.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Program.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Program.cs",
+              "RelativeToolTip": "BulkyBookWeb\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T07:53:40.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BulkyBookWeb\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-09T07:32:52.032Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
