@@ -1,0 +1,48 @@
+﻿@* 在接下來的程式碼中，請自動包含 BulkyBookWeb.Models 這個路徑 *@
+@using BulkyBookWeb.Models
+@* 
+小寫m表示宣告種類(定義規格)，是 Razor 語法的指示詞（Directive），大寫表示使用資料(物件) 
+View 只要知道「這箱東西是 List<Category>」，它就知道怎麼用 C# 程式碼把裡面的資料印出來。
+View 不需要知道是哪個快遞員（Controller）送來的。今天不管是 CategoryController 送來的，還是 AdminController 送來的，
+只要送來的是 List<Category>，這張 View 就能完美印出畫面
+*@
+@model List<BulkyBookWeb.Models.Category>
+
+<div class="container-fluid py-4">
+    <div class="card border shadow-sm overflow-hidden">
+        <div class="card-header text-white py-3 px-4 d-flex align-items-center justify-content-between" style="background: linear-gradient(to right, #065f46, #282828, #191414);">
+            <div>
+                <h5 class="mb-0 fw-bold"><i class="bi bi-grid me-2"></i>Categories</h5>
+                <p class="mb-0 small" style="color: #1DB954;">Manage your product categories</p>
+            </div>
+            <a asp-controller="Category" asp-action="Create" class="btn btn-sm btn-outline-light fw-semibold d-inline-flex align-items-center gap-1">
+                <i class="bi bi-plus-lg"></i> New Category
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table-styled">
+                <thead>
+                    <tr>
+                        <th>Category Name</th>
+                        <th>Display Order</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Row - Students will replace with @@foreach loop -->
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td class="fw-medium" style="color: #1e293b;">@obj.Name</td>
+                            <td><span class="badge bg-light text-dark border">@obj.DisplayOrder</span></td>
+                            <td class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-success me-1"><i class="bi bi-pencil-square me-1"></i>Edit</a>
+                                <a href="#" class="btn btn-sm btn-outline-danger"><i class="bi bi-trash me-1"></i>Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

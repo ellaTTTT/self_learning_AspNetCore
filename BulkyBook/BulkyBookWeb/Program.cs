@@ -1,8 +1,19 @@
+using BulkyBookWeb.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //幫網站裝上「接待員（Controller）」和「View」，讓網站能夠根據使用者的要求去選取資料並顯示畫面
 builder.Services.AddControllersWithViews();
+
+//做DB 的整合與管理
+//專門用來簡化讀取 ConnectionStrings 區塊的程式碼
+//var test = builder.Configuration.GetConnectionString("SQLConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:SQLConnection").Value);
+});
 
 //根據設定，把網站應用程式實體(app object)建造出來
 var app = builder.Build();
