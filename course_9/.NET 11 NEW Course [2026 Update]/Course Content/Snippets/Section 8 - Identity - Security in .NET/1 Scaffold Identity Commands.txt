@@ -1,0 +1,14 @@
+Step 1-
+dotnet tool install -g dotnet-aspnet-codegenerator
+
+
+Step 2- 
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+dotnet add package Microsoft.AspNetCore.Identity.UI
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+
+Step 3-
+dotnet aspnet-codegenerator identity
+
+

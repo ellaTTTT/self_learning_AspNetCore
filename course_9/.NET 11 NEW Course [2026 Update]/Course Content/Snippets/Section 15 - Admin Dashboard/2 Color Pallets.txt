@@ -1,0 +1,14 @@
+
+// Chart colors - Chart.js default palette in hex format
+const chartColors = ['#FF6384', '#FF9F40', '#FFCD56', '#4BC0C0', '#36A2EB', '#9966FF', '#C9CBCF'];
+
+// Status-specific colors for order status chart
+const statusColorMap = {
+    'Pending': '#FFCD56',      // Yellow
+    'Approved': '#4BC0C0',     // Teal
+    'Processing': '#36A2EB',   // Blue
+    'Shipped': '#9966FF',      // Purple
+    'Cancelled': '#FF6384',    // Pink/Red
+    'Refunded': '#FF9F40',     // Orange
+    'Unknown': '#C9CBCF'       // Gray
+};

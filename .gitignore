@@ -1,0 +1,8 @@
+# Visual Studio 暫存與快取
+.vs/
+*.user
+*.suo
+
+# 編譯輸出目錄
+[Bb]in/
+[Oo]bj/

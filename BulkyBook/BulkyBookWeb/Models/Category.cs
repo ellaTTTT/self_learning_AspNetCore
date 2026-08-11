@@ -14,8 +14,12 @@ namespace BulkyBookWeb.Models
         */
         //[Key] //表示這個欄位是資料表的主鍵，是一個state annotation(狀態註解)，用於 primary key 的名稱不是 Id 時
         public int Id { get; set; } //建立一個property
+
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; } = string.Empty; //表示 Name 預設值為空字串，避免 null 的問題(防止「剛建立好、但還沒給值」的空檔)
 
-        public int DisplayOrder { get; set; }
+        [Range(0, 100, ErrorMessage ="Range must be between 0 and 100!")]
+        public int? DisplayOrder { get; set; }
     }
 }

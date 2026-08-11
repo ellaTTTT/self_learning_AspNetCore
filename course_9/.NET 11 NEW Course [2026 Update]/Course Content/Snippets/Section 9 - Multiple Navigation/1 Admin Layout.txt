@@ -1,0 +1,122 @@
+Style:
+<style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #f8f9fa; }
+    .admin-sidebar { width: 240px; background: #191414; border-right: 1px solid rgba(255,255,255,0.1); }
+    .admin-sidebar-nav .nav-link { color: #94a3b8; font-size: 0.875rem; padding: 0.5rem 0.75rem; border-radius: 0.375rem; text-decoration: none; }
+    .admin-sidebar-nav .nav-link:hover { color: #fff; background: rgba(255,255,255,0.05); }
+    .admin-sidebar-nav .nav-link.active { color: #fff; background: #17A34A; }
+    .admin-sidebar-nav .nav-section { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; padding: 0.5rem 0.75rem; margin-top: 0.75rem; }
+</style>
+
+
+
+Content:
+    <div class="d-lg-none sticky-top border-bottom" style="background: #191414; border-color: rgba(255,255,255,0.1) !important;">
+        <div class="d-flex align-items-center justify-content-between px-3 py-2">
+            <button class="btn btn-link text-white-50 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+            <span class="fw-semibold text-white">Admin Panel</span>
+            <button id="themeToggleMobile" class="btn btn-link text-white-50 p-0" type="button">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" style="background: #191414;">
+        <div class="offcanvas-header border-bottom" style="border-color: rgba(255,255,255,0.1) !important;">
+            <h6 class="mb-0 fw-semibold text-white">BulkyBook <small class="text-success">Admin</small></h6>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-3">
+            <div class="admin-sidebar-nav">
+                <p class="nav-section mb-1">Overview</p>
+                <!-- TODO: Add navigation links with active class logic -->
+                <a href="#" class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-graph-up"></i> Dashboard
+                </a>
+
+                <p class="nav-section mb-1">Commerce</p>
+                <a href="#" class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-truck"></i> Orders
+                </a>
+                <a href="#" class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-book"></i> Products
+                </a>
+                <a href="#" class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-tags"></i> Categories
+                </a>
+
+                <!-- TODO: Show Management section only for Admin role -->
+                <p class="nav-section mb-1">Management</p>
+                <a href="#" class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-people"></i> Users
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex">
+        <aside class="admin-sidebar d-none d-lg-flex flex-column position-sticky top-0" style="height: 100vh;">
+            <div class="p-3 border-bottom" style="border-color: rgba(255,255,255,0.1) !important;">
+                <h6 class="mb-0 fw-semibold text-white">BulkyBook <small class="text-success">Admin</small></h6>
+            </div>
+
+            <nav class="flex-grow-1 overflow-auto p-3">
+                <div class="admin-sidebar-nav">
+                    <p class="nav-section mb-1">Overview</p>
+                    <!-- TODO: Add navigation links with active class logic -->
+                    <a href="#" class="nav-link d-flex align-items-center gap-2">
+                        <i class="bi bi-graph-up"></i> Dashboard
+                    </a>
+
+                    <p class="nav-section mb-1">Commerce</p>
+                    <a href="#" class="nav-link d-flex align-items-center gap-2">
+                        <i class="bi bi-truck"></i> Orders
+                    </a>
+                    <a href="#" class="nav-link d-flex align-items-center gap-2">
+                        <i class="bi bi-book"></i> Products
+                    </a>
+                    <a href="#" class="nav-link d-flex align-items-center gap-2">
+                        <i class="bi bi-tags"></i> Categories
+                    </a>
+
+                    <!-- TODO: Show Management section only for Admin role -->
+                    <p class="nav-section mb-1">Management</p>
+                    <a href="#" class="nav-link d-flex align-items-center gap-2">
+                        <i class="bi bi-people"></i> Users
+                    </a>
+                </div>
+            </nav>
+
+            <div class="border-top p-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-person-circle" style="color: #94a3b8;"></i>
+                    <!-- TODO: Display username -->
+                    <span class="small text-truncate flex-grow-1 text-white">Username</span>
+                    <button id="themeToggle" class="btn btn-sm btn-link p-0" style="color: #94a3b8;" type="button" title="Toggle theme">
+                        <i class="bi bi-moon-stars" id="themeIcon"></i>
+                    </button>
+                </div>
+                <div class="d-flex gap-2">
+                    <!-- TODO: Add link to store -->
+                    <a href="#" class="btn btn-sm btn-outline-light flex-grow-1">
+                        <i class="bi bi-shop"></i> Store
+                    </a>
+                    <!-- TODO: Add logout form -->
+                    <form method="post" action="#">
+                        <button type="submit" class="btn btn-sm btn-outline-danger" title="Logout">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-grow-1">
+            <div class="p-4">
+                <!-- TODO: Render notification partial and page body -->
+            </div>
+        </main>
+    </div>
+
