@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "BulkyBookWeb/1.0.0": {
         "dependencies": {
+          "BulkyBook.Business": "1.0.0",
+          "BulkyBook.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "10.0.10"
         },
@@ -750,6 +752,48 @@
             "fileVersion": "9.0.425.16305"
           }
         }
+      },
+      "BulkyBook.Business/1.0.0": {
+        "dependencies": {
+          "BulkyBook.DataAccess": "1.0.0",
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0"
+        },
+        "runtime": {
+          "BulkyBook.Business.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BulkyBook.DataAccess/1.0.0": {
+        "dependencies": {
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.10"
+        },
+        "runtime": {
+          "BulkyBook.DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BulkyBook.Models/1.0.0": {
+        "runtime": {
+          "BulkyBook.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BulkyBook.Utility/1.0.0": {
+        "runtime": {
+          "BulkyBook.Utility.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1066,6 +1110,26 @@
       "sha512": "sha512-o94k2RKuAce3GeDMlUvIXlhVa1kWpJw95E6C9LwW0KlG0nj5+SgCiIxJ2Eroqb9sLtG1mEMbFttZIBZ13EJPvQ==",
       "path": "system.security.cryptography.protecteddata/9.0.4",
       "hashPath": "system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
+    },
+    "BulkyBook.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BulkyBook.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BulkyBook.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BulkyBook.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

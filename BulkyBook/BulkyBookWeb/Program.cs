@@ -1,5 +1,7 @@
-using BulkyBookWeb.Data;
+using BulkyBook.Business.Services.IServices;
+using BulkyBook.Business.Services;
 using Microsoft.EntityFrameworkCore;
+using BulkyBook.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,13 @@ builder.Services.AddControllersWithViews();
 //var test = builder.Configuration.GetConnectionString("SQLConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:SQLConnection").Value);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
 });
+//向系統註冊 「依賴注入（Dependency Injection, DI）」 的規則
+//如果 Controller 或其他地方跟你要 ICategoryService（介面），請你自動建立一個 CategoryService（實體類別）給它
+//AddScoped 決定了這個物件要「活多久」。在 Web 開發中，Scoped(生命週期) 代表一次 HTTP 請求（Per HTTP Request），
+//當網頁回應（Response）回傳給使用者後，這個實體就會被系統自動銷毀釋放記憶體
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 //根據設定，把網站應用程式實體(app object)建造出來
 var app = builder.Build();

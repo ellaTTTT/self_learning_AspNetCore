@@ -1034,6 +1034,56 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "BulkyBook.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BulkyBook.DataAccess": "1.0.0",
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBook.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Business.dll": {}
+        }
+      },
+      "BulkyBook.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.10"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBook.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.DataAccess.dll": {}
+        }
+      },
+      "BulkyBook.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        }
+      },
+      "BulkyBook.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
+        }
       }
     }
   },
@@ -3080,10 +3130,32 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BulkyBook.Business/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Business/BulkyBook.Business.csproj",
+      "msbuildProject": "../BulkyBook.Business/BulkyBook.Business.csproj"
+    },
+    "BulkyBook.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.DataAcess/BulkyBook.DataAccess.csproj",
+      "msbuildProject": "../BulkyBook.DataAcess/BulkyBook.DataAccess.csproj"
+    },
+    "BulkyBook.Models/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Modles/BulkyBook.Models.csproj",
+      "msbuildProject": "../BulkyBook.Modles/BulkyBook.Models.csproj"
+    },
+    "BulkyBook.Utility/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Utility/BulkyBook.Utility.csproj",
+      "msbuildProject": "../BulkyBook.Utility/BulkyBook.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "BulkyBook.Business >= 1.0.0",
+      "BulkyBook.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.10"
     ]
@@ -3114,13 +3186,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.Business\\BulkyBook.Business.csproj": {
+              "projectPath": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.Business\\BulkyBook.Business.csproj"
+            },
+            "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.DataAcess\\BulkyBook.DataAccess.csproj": {
+              "projectPath": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.DataAcess\\BulkyBook.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3133,7 +3213,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "11.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -3162,24 +3242,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[10.0.9, 10.0.9]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[10.0.9, 10.0.9]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.9, 10.0.9]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[10.0.9, 10.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3188,7 +3250,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100-preview.6.26359.118/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BulkyBookWeb.Models
+namespace BulkyBook.Models
 {
     // 這是用來描述「Category」的資料模型，會對應到(conver to)資料庫中的一個資料表/欄位。
     public class Category

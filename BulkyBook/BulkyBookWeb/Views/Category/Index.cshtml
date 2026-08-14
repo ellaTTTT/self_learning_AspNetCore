@@ -1,12 +1,12 @@
 ﻿@* 在接下來的程式碼中，請自動包含 BulkyBookWeb.Models 這個路徑 *@
-@using BulkyBookWeb.Models
+@using BulkyBook.Models
 @* 
 小寫m表示宣告種類(定義規格)，是 Razor 語法的指示詞（Directive），大寫表示使用資料(物件) 
 View 只要知道「這箱東西是 List<Category>」，它就知道怎麼用 C# 程式碼把裡面的資料印出來。
 View 不需要知道是哪個快遞員（Controller）送來的。今天不管是 CategoryController 送來的，還是 AdminController 送來的，
 只要送來的是 List<Category>，這張 View 就能完美印出畫面
 *@
-@model List<BulkyBookWeb.Models.Category>
+@model List<BulkyBook.Models.Category>
 
 <div class="container-fluid py-4">
     <div class="card border shadow-sm overflow-hidden">

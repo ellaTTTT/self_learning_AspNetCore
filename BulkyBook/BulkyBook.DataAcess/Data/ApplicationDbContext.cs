@@ -1,7 +1,7 @@
-﻿using BulkyBookWeb.Models;
+﻿using BulkyBook.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyBookWeb.Data
+namespace BulkyBook.DataAccess.Data
 {
     // 1. ApplicationDbContext類別名稱，是自訂的資料庫上下文類別，繼承Entity Framework Core 的 DbContext 父類別
     public class ApplicationDbContext : DbContext
