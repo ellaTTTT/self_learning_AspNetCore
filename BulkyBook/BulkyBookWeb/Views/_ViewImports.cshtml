@@ -1,2 +1,5 @@
-﻿@using BulkyBookWeb
+﻿@* Razor 引擎在解析 Area 內部的頁面時，預設只會往上查找到該 Area 的根目錄（Areas/Customer或是Admin/Views），
+   不會主動穿透去吃全域 /Views/ 裡面的 _ViewStart。如果 Area 裡面沒有放這兩個檔案，
+   該 Area 的 View 就會失去 Layout 和 Tag Helper *@
+@using BulkyBookWeb
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

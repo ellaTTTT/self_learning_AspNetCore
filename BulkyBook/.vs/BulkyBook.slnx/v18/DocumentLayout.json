@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybook.business\\services\\iservices\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|solutionrelative:bulkybook.business\\services\\iservices\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybook.business\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|solutionrelative:bulkybook.business\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\areas\\customer\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\areas\\customer\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED68696D-19A5-4902-9CA1-4EF3208966CB}|BulkyBook.DataAcess\\BulkyBook.DataAccess.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybook.dataacess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED68696D-19A5-4902-9CA1-4EF3208966CB}|BulkyBook.DataAcess\\BulkyBook.DataAccess.csproj|solutionrelative:bulkybook.dataacess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B9127B-7FC5-5E71-AAFD-3B4ECDCFD278}|BulkyBookWeb\\BulkyBookWeb.csproj|solutionrelative:bulkybookweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|d:\\ella\\self_learning_aspnetcore\\bulkybook\\bulkybook.business\\services\\iservices\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7272F2D3-B017-465A-9A69-57E8AEB338EB}|BulkyBook.Business\\BulkyBook.Business.csproj|solutionrelative:bulkybook.business\\services\\iservices\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,43 +42,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BulkyBookWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAnwCQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-15T07:28:47.025Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BulkyBookWeb\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-15T07:10:07.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BulkyBookWeb\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T17:26:02.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.DataAcess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BulkyBook.DataAcess\\Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.DataAcess\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "BulkyBook.DataAcess\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T15:41:14.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Program.cs",
               "RelativeDocumentMoniker": "BulkyBookWeb\\Program.cs",
               "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Program.cs",
               "RelativeToolTip": "BulkyBookWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T15:13:45.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BulkyBookWeb\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Controllers\\CategoryController.cs*",
-              "RelativeToolTip": "BulkyBookWeb\\Controllers\\CategoryController.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwDYAAAAWAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Areas\\Customer\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BulkyBookWeb\\Areas\\Customer\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBookWeb\\Areas\\Customer\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BulkyBookWeb\\Areas\\Customer\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T10:11:33.384Z",
               "EditorCaption": ""
@@ -79,24 +134,20 @@
               "RelativeDocumentMoniker": "BulkyBook.Business\\CategoryService.cs",
               "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.Business\\CategoryService.cs",
               "RelativeToolTip": "BulkyBook.Business\\CategoryService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAswDEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAjwDgAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T09:58:53.939Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.Business\\Services\\IServices\\ICategoryService.cs",
               "RelativeDocumentMoniker": "BulkyBook.Business\\Services\\IServices\\ICategoryService.cs",
               "ToolTip": "D:\\ella\\self_learning_AspNetCore\\BulkyBook\\BulkyBook.Business\\Services\\IServices\\ICategoryService.cs",
               "RelativeToolTip": "BulkyBook.Business\\Services\\IServices\\ICategoryService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAawBMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T08:56:07.591Z",
               "EditorCaption": ""

@@ -22,9 +22,10 @@
                 *@
                 <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
                 <div class="mb-3">
-                    <label asp-for="Name" class="form-label fw-semibold small">Category Name</label>
+                    <label asp-for="Name" class="form-label fw-semibold small"></label>
                     @*asp-for 是 ASP.NET Core 網頁框架中的一個「自動綁定標籤（Tag Helper）」，專門寫在前端 HTML 標籤（如 <input>、<label>
-                     、<textarea>）上，用來把網頁上的表單輸入框與後端 C# 的資料欄位直接「串接」起來 *@
+                     、<textarea>）上，用來把網頁上的表單輸入框與後端 C# 的資料欄位直接「串接」起來，
+                     當 label 輸出為空且後端 C# 資料欄位無 [Display(Name="")] 相關時，會預設顯示asp-for的資料 *@
                     <input type="text" name="Name" asp-for="Name" class="form-control" placeholder="Enter category name" />
                     <span asp-validation-for="Name" class="text-danger small"></span>
                 </div>

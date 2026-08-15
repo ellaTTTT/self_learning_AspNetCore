@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
 namespace BulkyBook.Models
 {
@@ -17,8 +18,11 @@ namespace BulkyBook.Models
 
         [Required]
         [StringLength(100)]
+        [Display(Name = "Categoty Name")]
         public string Name { get; set; } = string.Empty; //表示 Name 預設值為空字串，避免 null 的問題(防止「剛建立好、但還沒給值」的空檔)
 
+        [Display(Name = "Display Order")]
+        [ValidateNever] //在模型驗證時略過該欄位
         [Range(0, 100, ErrorMessage ="Range must be between 0 and 100!")]
         public int? DisplayOrder { get; set; }
     }

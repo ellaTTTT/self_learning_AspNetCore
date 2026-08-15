@@ -1,6 +1,6 @@
 ﻿using BulkyBook.Business.Services.IServices;
-using BulkyBook.DataAccess.Data;
 using BulkyBook.Models;
+using BulkyBook.DataAccess.Data;
 using Microsoft.AspNetCore.Mvc;
 
 //變動前，CategoryController 直接相依於 ApplicationDbContext，控制器內部佈滿了 Entity Framework Core 的資料庫指令（如 _context.Categories.ToList() 或 _context.SaveChanges()）。
@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 //變動之後獨立出了業務邏輯層，建立了 CategoryService 與其介面 ICategoryService。現在 Controller 改為注入 ICategoryService 介面，只需呼叫 _categoryService.GetAllCategoriesAsync() 這類方法，便能將所有資料讀寫與業務規則完全外包給 CategoryService 處理
 //同時也在 Program.cs 透過 builder.Services.AddScoped<ICategoryService, CategoryService>() 完成服務註冊，交由系統自動管理物件的生命週期。
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class CategoryController : Controller
     {
         //是「欄位」（Field），也就是變數（Variable），因為沒有()，是存放物件的儲存空間（欄位）
@@ -22,7 +23,7 @@ namespace BulkyBookWeb.Controllers
         public async Task<IActionResult> Index()
         {
             //呼叫 Service 提供的非同步方法，Controller 完全不知道資料庫怎麼實作的
-            var categories = _categoryService.GetAllCategoriesAsync();
+            var categories = await _categoryService.GetAllCategoriesAsync();
             return View("Index", categories);
         }
 
@@ -38,13 +39,13 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken] //避免CSRF（Cross-Site Request Forgery，跨站請求偽造）
         [ActionName("Create")]
         //自動把前端傳過來的文字資料打包成一個 C# 的 Category 物件，並傳進 category 這個變數裡
-        public async Task<IActionResult> CreatePost(Category category)
+        public async Task<IActionResult> CreatePOST(Category category)
         {
             //c：代表資料庫 Categories 資料表中的每一筆舊資料，category：代表使用者這次剛提交上來的新資料
             //向資料庫詢問「是否有任何Any一筆資料符合括號內的條件(不分大小寫)？」(有就回傳 true，沒有就回傳 false)
             //此時ModelState就會有錯誤值，進而使下方if條件判斷無法通過
             //這是屬於伺服器端的驗證(Server-Side Validation)，是資料的最後一道防線，就算惡意跳過前端頁面，Controller 依然能擋下錯誤資料
-            if (!String.IsNullOrEmpty(category.Name) && await _categoryService.IsCategoryNameUniqueAsync(category.Name))
+            if (!String.IsNullOrEmpty(category.Name) && !await _categoryService.IsCategoryNameUniqueAsync(category.Name))
             {
                 ModelState.AddModelError("", "Category name already exist!");
             }
@@ -68,7 +69,7 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
 
-            var category = _categoryService.GetCategoryByIdAsync(id.Value);
+            var category = await _categoryService.GetCategoryByIdAsync(id.Value);
             if(category == null)
             {
                 return NotFound();
@@ -78,10 +79,10 @@ namespace BulkyBookWeb.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ActionName("Update")]
-        public async Task<IActionResult> UpdatePost(Category category)
+        public async Task<IActionResult> UpdatePOST(Category category)
         {
             if (!String.IsNullOrEmpty(category.Name) && 
-               await _categoryService.IsCategoryNameUniqueAsync(category.Name, category.Id))
+               !await _categoryService.IsCategoryNameUniqueAsync(category.Name, category.Id))
             {
                 ModelState.AddModelError("", "Category name already exist!");
             }
@@ -103,7 +104,7 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
 
-            var category = _categoryService.GetCategoryByIdAsync(id.Value);
+            var category = await _categoryService.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
@@ -114,7 +115,7 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken]
         [ActionName("Delete")]
         //遵循最小知識原則（Principle of Least Knowledge）：刪除只需要知道 ID，後端就不應該要求呼叫者提供比 ID 更多的資訊。
-        public async Task<IActionResult> DeletePost(int id)
+        public async Task<IActionResult> DeletePOST(int id)
         {
             await _categoryService.DeleteCategoryAsync(id);
             /* 

@@ -58,11 +58,12 @@ namespace BulkyBook.Business.Services
         {
             if (categoryId.HasValue)
             {
-                //修改既有分類，c.Id != categoryId.Value 是為了排除自己
+                // true修改既有分類(Update)，c.Id != categoryId.Value 是為了排除自己，是否有「名稱相同」，且「ID 不是自己」的資料
                 return !await _context.Categories.AnyAsync(c => c.Name.ToLower() == name.ToLower() && c.Id != categoryId.Value);
             }
-            else //新增分類
+            else // false新增分類(Create)
             {
+                // 有沒有任何一筆資料的名稱跟新名稱一樣，有的話就回傳true，但經過反向會得到false
                 return !await _context.Categories.AnyAsync(c => c.Name.ToLower() == name.ToLower());
             }
         }

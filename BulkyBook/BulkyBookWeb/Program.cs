@@ -45,13 +45,22 @@ app.UseAuthorization();
 
 app.MapStaticAssets(); //1. 在應用程式啟動時，系統就會授權伺服器讀取並提供 wwwroot 資料夾裡面的 CSS、JavaScript 與圖片檔案。如果把這行註解/刪除，網頁上的 CSS 樣式與圖片就會全部失效載入不出來。效能比舊版(UseStaticFiles())更換更高、速度更快
 
+app.MapControllerRoute(
+    name: "MyArea", //辨識路由的「內部標籤」
+    //路由網址的比對篩選器，{area}是系統關鍵字，是一個「佔位符 / 變數，容器」，用來接收網址第一段文字
+    // :exists 是將使用者輸入的網址塞進路由規則中的 {area} 變數，確認是否有 Controller 帶有對應的 [Area] 標記
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
 //設定當使用者輸入網址時該怎麼對應到後台程式
 app.MapControllerRoute(
     name: "default",
     //{id?}問號代表選填，網址後面可以帶 ID 參數（例如文章編號）
-    //如果使用者輸入 https://mysite.com/，系統會自動導向到 `Home` 控制器的 `Index` 畫面（首頁）
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    //如果使用者輸入 https://localhost/，系統會自動導向到 `Home` 控制器的 `Index` 畫面（首頁）
+    pattern: "{controller=Home}/{action=Index}/{id?}",
+    defaults: new { area = "Customer" }) //如果使用者在網址列完全沒有輸入 Area 名稱，請自動把 Area 當作 "Customer"
     .WithStaticAssets(); // 2. 將 Controller 產生的網頁畫面與這些優化過的靜態資產綁定在一起
+
 
 
 app.Run();

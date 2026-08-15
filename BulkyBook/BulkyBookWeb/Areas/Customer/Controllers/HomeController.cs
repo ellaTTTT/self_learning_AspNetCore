@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Customer.Controllers
 {
+    //Area("Customer") 是一個屬性（Attribute），用來標記這個控制器（Controller）屬於哪個區域（Area）
+    //在 .NET Core MVC 中，Area 是一種「分組機制（架構模式）」，透過【實體資料夾】與【程式碼標籤】一起合作完成
+    [Area("Customer")]
     public class HomeController : Controller //繼承 Microsoft.AspNetCore.Mvc (第2行)所提供的 Controller 類別
     {
         //ASP.NET Core 中的一個介面（Interface），這個 HTTP 動作執行完畢後，要回傳給瀏覽器的結果
