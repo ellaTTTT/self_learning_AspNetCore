@@ -232,3 +232,5 @@ D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\refint
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.pdb
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.genruntimeconfig.cache
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\ref\BulkyBookWeb.dll
+D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.MvcApplicationPartsAssemblyInfo.cs
+D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\k5hz13g0sv-{0}-zvvlqdzndr-zvvlqdzndr.gz

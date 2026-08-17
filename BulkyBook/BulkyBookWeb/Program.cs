@@ -21,6 +21,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //AddScoped 決定了這個物件要「活多久」。在 Web 開發中，Scoped(生命週期) 代表一次 HTTP 請求（Per HTTP Request），
 //當網頁回應（Response）回傳給使用者後，這個實體就會被系統自動銷毀釋放記憶體
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 //根據設定，把網站應用程式實體(app object)建造出來
 var app = builder.Build();

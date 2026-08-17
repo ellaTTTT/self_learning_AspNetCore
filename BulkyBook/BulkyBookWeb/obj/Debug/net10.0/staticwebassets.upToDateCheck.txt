@@ -33,6 +33,7 @@ D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\di
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\js\products.js
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\js\site.js
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 D:\ella\self_learning_AspNetCore\BulkyBook\BulkyBookWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -64,6 +65,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\book.png
 wwwroot\images\confirmed.png
+wwwroot\js\products.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

@@ -22,7 +22,8 @@ namespace BulkyBook.Models
         public string Name { get; set; } = string.Empty; //表示 Name 預設值為空字串，避免 null 的問題(防止「剛建立好、但還沒給值」的空檔)
 
         [Display(Name = "Display Order")]
-        [ValidateNever] //在模型驗證時略過該欄位
+        //在執行 ModelState.IsValid 驗證時，完全略過這個欄位，不管它是 null 還是空值，都不要判定為驗證失敗
+        //[ValidateNever]
         [Range(0, 100, ErrorMessage ="Range must be between 0 and 100!")]
         public int? DisplayOrder { get; set; }
     }

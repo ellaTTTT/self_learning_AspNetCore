@@ -84,3 +84,14 @@
     async 是「開關/宣告」，await 是「非同步等待並取出包裹裡的資料」。兩者配合能讓伺服器在等待資料庫時不卡死，大幅提升網站的併發處理能力。
 7. Area
     他「不是類別（Class）」，它是一種「分組機制（架構模式）」，是透過【實體資料夾】與【程式碼標籤】一起合作完成的。讓專案目錄整齊，後台的檔案不會跟前台混在一起。業務變大時（大型專案）：你想把「前台商城（Customer）」和「後台管理（Admin）」拆成兩個獨立部門，各自有自己的 Controller 和 View，互不干擾。這整個分區的機制就叫做 Area（區域）
+8. 
+    Models（食材/菜單規格）：定義一道菜由哪些欄位組成。
+
+    DataAccess（倉庫/冰箱）：專門負責向資料庫存取原料。
+
+    Business（廚房主廚）：處理核心業務邏輯（折扣計算、庫存驗證、商業規則）。
+
+    Web / MVC（外場服務生 + 菜單介面）：負責接待客人、接收點餐（HTTP Request）、將餐點端給客人（View），並維持店面運作流程。如果沒有 Web 層，廚房的菜再美味也無人可點。
+9. 在傳統的 ASP.NET Core MVC Controller 中，通常會混雜兩類方法，用`#region API CALLS`包起來，能讓開發者一眼看出哪些方法是專門對接前端 JS 的 API
+    - 畫面 Action（MVC 視圖）：如 Index()、Create()、Edit()，結尾是 return View()，負責渲染整張 HTML 網頁給瀏覽器。
+    - API Action（前端資料接口）：如 GetAll()、Delete(int id)，結尾是 return Json(...)，專門提供給前端 JavaScript（例如 products.js、DataTables 或 AJAX）非同步拉取或修改資料。

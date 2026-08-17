@@ -1,0 +1,46 @@
+﻿@using BulkyBook.Models
+@model Product
+
+<div class="container-fluid py-3">
+    <a asp-action="Index" class="text-decoration-none text-secondary small fw-medium d-inline-flex align-items-center gap-1 mb-3">
+        <i class="bi bi-arrow-left"></i> Back to products
+    </a>
+    <div class="card border shadow-sm overflow-hidden">
+        <div class="card-header text-white py-3 px-4" style="background: linear-gradient(to right, #065f46, #282828, #191414);">
+            <h5 class="mb-0 fw-bold"><i class="bi bi-plus-lg me-2"></i>Create Product</h5>
+            <p class="mb-0 small" style="color: #1DB954;">Add a new product for your products</p>
+        </div>
+        <div class="card-body p-4">
+            <form method="post">
+                @* asp-validation-summary 是 ASP.NET Core MVC / Razor Pages 的標籤協助程式（Tag Helper），
+                   用來集中顯示表單的驗證錯誤訊息。它包含 All、ModelOnly 與 None 3 個選項，主要差異在於顯示錯誤訊息的範圍，
+                   其中summary用來顯示整個表單 / 全域層級的綜合錯誤訊息
+                   All - 顯示所有驗證錯誤
+                   ModelOnly - 只顯示模型層級的整體錯誤訊息
+                   None - 完全不顯示任何驗證錯誤摘要
+                   asp-validation-for="[欄位名稱]"顯示該欄位專屬的錯誤訊息，欄位名稱要跟asp-for裡面的一樣
+                *@
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label fw-semibold small"></label>
+                    @*asp-for 是 ASP.NET Core 網頁框架中的一個「自動綁定標籤（Tag Helper）」，專門寫在前端 HTML 標籤（如 <input>、<label>
+                     、<textarea>）上，用來把網頁上的表單輸入框與後端 C# 的資料欄位直接「串接」起來，
+                     當 label 輸出為空且後端 C# 資料欄位無 [Display(Name="")] 相關時，會預設顯示asp-for的資料 *@
+                    <input type="text" name="Name" asp-for="Title" class="form-control" placeholder="Enter product name" />
+                    <span asp-validation-for="Title" class="text-danger small"></span>
+                </div>
+                <div class="d-flex gap-2 mt-4">
+                    <button type="submit" class="btn btn-accent fw-semibold">Create Product</button>
+                    <a asp-action="Index" class="btn btn-light fw-medium">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* 使用者介面與第一線攔截(Client-Side Validation) - 引進後，使用者在填寫表單時，不用傳回伺服器，
+瀏覽器就會即時檢查欄位格式並跳出紅字警告，大幅提升使用者體驗與減少伺服器負擔 *@
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+
+}
